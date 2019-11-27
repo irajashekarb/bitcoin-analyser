@@ -3,6 +3,7 @@ package coinyser
 import org.apache.spark.sql._
 import org.apache.spark.sql.test.SharedSparkSession
 import org.scalatest.{Matchers, WordSpec}
+import java.sql.Timestamp
 
 class BatchProducerSpec extends WordSpec with Matchers with SharedSparkSession {
   val httpTransaction1 =
@@ -23,4 +24,19 @@ class BatchProducerSpec extends WordSpec with Matchers with SharedSparkSession {
         Seq(httpTransaction1, httpTransaction2)
     }
   }
+
+  "BatchProducer.httpToDomainTransactions" should {
+    "transfrom a Dataset[HttpTransaction] into a Dataset[Transaction]" in {
+      import testImplicits._
+      val source: Dataset[HttpTransaction] = Seq(httpTransaction1, httpTransaction2).toDS()
+      val target: Dataset[Transaction] = BatchProducer.httpToDomainTransactions(source)
+      val transaction1 = Transaction(timestamp = new Timestamp(1532365695000L), tid = 70683282, price = 7740.00, sell = false, amount = 0.10041719)
+      val transaction2 = Transaction(timestamp = new Timestamp(1532365693000L), tid = 70683281, price = 7739.99, sell = false, amount = 0.00148564)
+
+      target.collect() should contain theSameElementsAs
+        Seq(transaction1, transaction2)
+    }
+  }
 }
+
+

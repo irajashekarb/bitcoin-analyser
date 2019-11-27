@@ -5,6 +5,7 @@ import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Dataset, SparkSession}
 
 object BatchProducer {
+
   def jsonToHttpTransactions(json: String) (implicit spark: SparkSession): Dataset[HttpTransaction] = {
     // Importing Spark implicits to use it's functions
     import spark.implicits._
@@ -18,5 +19,19 @@ object BatchProducer {
     ds.select(explode(arrayColumn).alias("v"))
       .select("v.*")
       .as[HttpTransaction]
+  }
+
+  // Creating a method to store all the transactions with their timestamps
+  def httpToDomainTransactions(ds: Dataset[HttpTransaction]): Dataset[Transaction] = {
+    import ds.sparkSession.implicits._
+    ds.select(
+      $"date".cast(LongType).cast(TimestampType).as("timestamp"),
+      $"date".cast(LongType).cast(TimestampType).
+        cast(DateType).as("date"),
+      $"tid".cast(IntegerType),
+      $"price".cast(DoubleType),
+      $"type".cast(BooleanType).as("sell"),
+      $"amount".cast(DoubleType))
+      .as[Transaction]
   }
 }
