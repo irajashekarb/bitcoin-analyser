@@ -3,6 +3,7 @@ package coinyser
 import java.sql.{Date, Timestamp}
 import java.time.ZoneOffset
 
+// Case class for Dataset[Transaction]
 case class Transaction(timestamp: Timestamp,
                        date: Date,
                        tid: Int,
