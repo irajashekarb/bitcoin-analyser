@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/productlistingapp" value="PREVIEW" />
+        <entry key="$USER_HOME$/productslistingapp" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UBagQFiFH6luFXWADrlpYpREy0" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/Scala Project/bitcoin-analyser" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/Scala Project/online-shoppping-cart" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Online Shopping App/shopping" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Scala-Programming-Projects/Chapter04" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Scala-Programming-Projects/OnlineShoppingApp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../Scala/example/example" value="PREVIEW" />
+        <entry key="$USER_HOME$/IdeaProjects/Example" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+</project>
