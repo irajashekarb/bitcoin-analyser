@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bf08a57-c371-46ee-9df7-6770f63d73cb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/productlistingapp" value="PREVIEW" />
-        <entry key="$USER_HOME$/productslistingapp" value="PREVIEW" />
-      </map>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UBagQFiFH6luFXWADrlpYpREy0" />
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3149665106264" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="2049678695" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3280644262" />
+      </map>
+    </option>
     <option name="projectSyncType">
       <map>
         <entry key="$USER_HOME$/Desktop/Scala Project/bitcoin-analyser" value="PREVIEW" />
         <entry key="$USER_HOME$/Desktop/Scala Project/online-shoppping-cart" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../../../Online Shopping App/shopping" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../../Scala-Programming-Projects/Chapter04" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../../Scala-Programming-Projects/OnlineShoppingApp" value="PREVIEW" />
@@ -27,5 +58,18 @@
         <entry key="$USER_HOME$/IdeaProjects/Example" value="PREVIEW" />
       </map>
     </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bf08a57-c371-46ee-9df7-6770f63d73cb" name="Default Changelist" comment="" />
+      <created>1574832552832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574832552832</updated>
+    </task>
+    <servers />
   </component>
 </project>
