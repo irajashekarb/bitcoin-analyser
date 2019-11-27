@@ -18,7 +18,8 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-effect" % "1.0.0-RC2",
   "org.apache.spark" %% "spark-streaming" % sparkVersion % Provided,
   "org.apache.spark" %% "spark-sql-kafka-0-10" % sparkVersion % Provided exclude ("net.jpountz.lz4", "lz4"),
-  "com.pusher" % "pusher-java-client" % "1.8.0")
+  "com.pusher" % "pusher-java-client" % "1.8.0",
+  "org.apache.hadoop" % "hadoop-common" % "2.3.0")
 
 scalacOptions += "-Ypartial-unification"
 
