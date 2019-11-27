@@ -16,7 +16,8 @@ class BatchProducerSpec extends WordSpec with Matchers with SharedSparkSession {
         """[{"date": "1532365695", "tid": "70683282", "price": "7740.00", "type": "0", "amount": "0.10041719"},
           |{"date": "1532365693", "tid": "70683281", "price": "7739.99", "type": "0", "amount": "0.00148564"}]""".stripMargin
 
-      val ds: Dataset[HttpTransaction] = BatchProducer.jsonToHttpTransactions(json)
+      val ds: Dataset[HttpTransaction] =
+        BatchProducer.jsonToHttpTransactions(json)
 
       ds.collect() should contain theSameElementsAs
         Seq(httpTransaction1, httpTransaction2)
