@@ -1,5 +1,6 @@
 package coinyser
 
+import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.TimeZone
 
@@ -10,7 +11,7 @@ import com.pusher.client.Client
 import com.pusher.client.channel.SubscriptionEventListener
 import com.typesafe.scalalogging.StrictLogging
 
-object StreamingProducerApp extends StrictLogging{
+object StreamingProducer extends StrictLogging{
   val mapper: ObjectMapper = {
 
     val m = new ObjectMapper()
@@ -35,5 +36,14 @@ object StreamingProducerApp extends StrictLogging{
         }
       }))
     } yield ()
+  }
+
+  def convertWsTransaction(wsTx: WebsocketTransaction): Transaction = {
+    Transaction(
+      timestamp = new Timestamp(wsTx.timestamp.toLong * 1000), tid = wsTx.id, price = wsTx.price, sell = wsTx.`type` == 1, amount = wsTx.amount)
+  }
+
+  def serializeTransaction(transaction: Transaction): String = {
+    mapper.writeValueAsString(transaction)
   }
 }

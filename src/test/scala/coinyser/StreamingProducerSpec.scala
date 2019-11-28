@@ -15,21 +15,19 @@ class StreamingProducerSpec extends WordSpec with Matchers with TypeCheckedTripl
           |"price_str": "6339.73", "timestamp": "1533797395",
           |"price": 6339.7299999999996, "type": 0, "id":
           71826763}""".stripMargin
-      StreamingProducerApp.deserializeWebsocketTransaction(str) should ===(SampleWebsocketTransaction)
+      StreamingProducer.deserializeWebsocketTransaction(str) should ===(SampleWebsocketTransaction)
     }
   }
 
   "StreamingProducerApp.convertTransaction" should {
     "convert a WebsocketTransaction to Transaction" in {
-      StreamingProducerApp.convertWsTransaction
-      (SampleWebsocketTransaction) should === (SampleTransaction)
+      StreamingProducer.convertWsTransaction(SampleWebsocketTransaction) should === (SampleTransaction)
     }
   }
 
   "StreamingProducer.serializeTransaction" should {
     "serialize a Transaction to a String" in {
-      StreamingProducerApp.serializeTransaction
-      (SampleTransaction) should ===(SampleJsonTransaction)
+      StreamingProducer.serializeTransaction(SampleTransaction) should ===(SampleJsonTransaction)
     }
   }
 }
