@@ -24,12 +24,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="bitcoin-analyser" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -41,6 +36,10 @@
   </component>
   <component name="ProjectId" id="1UBagQFiFH6luFXWADrlpYpREy0" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-annotations-2.1.2.jar/jackson-annotations-2.1.2.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -55,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Scala Console.Scala Console">
+  <component name="RunManager" selected="Application.StreamingProducerApp">
     <configuration name="BatchProducerAppIntellij" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="coinyser.BatchProducerAppIntellij" />
       <module name="bitcoin-analyser" />
@@ -71,6 +70,19 @@
     </configuration>
     <configuration name="BatchProducerAppSpark" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="coinyser.BatchProducerAppSpark" />
+      <module name="bitcoin-analyser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coinyser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingProducerApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="coinyser.StreamingProducerApp" />
       <module name="bitcoin-analyser" />
       <extension name="coverage">
         <pattern>
@@ -135,12 +147,14 @@
     <list>
       <item itemvalue="Application.BatchProducerAppSpark" />
       <item itemvalue="Application.BatchProducerAppIntellij" />
+      <item itemvalue="Application.StreamingProducerApp" />
       <item itemvalue="Scala Console.Scala Console" />
       <item itemvalue="ScalaTest.BatchProducerSpec.BatchProducer.jsonToHttpTransaction should create a Dataset[HttpTransaction] from a Json string" />
       <item itemvalue="ScalaTest.BatchProducerIT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamingProducerApp" />
         <item itemvalue="Application.BatchProducerAppIntellij" />
         <item itemvalue="Application.BatchProducerAppSpark" />
         <item itemvalue="ScalaTest.BatchProducerIT" />
@@ -166,7 +180,7 @@
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="shared-sources" />
-                <option name="path" value="C:/tmp/sbt/bitcoin-analyser/scala-2.11" />
+                <option name="path" value="C:/tmp/sbt/bitcoin-analyser/scala-2.12" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="bitcoin-analyser-build" />
@@ -179,9 +193,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="3157785999" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3669929142" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2734922665" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2678115315" />
       </map>
     </option>
     <option name="projectSyncType">
