@@ -6,12 +6,14 @@ scalaVersion := "2.11.11"
 val sparkVersion = "2.3.1"
 
 libraryDependencies ++= Seq(
-  "org.lz4" % "lz4-java" % "1.4.0",
   "org.apache.spark" %% "spark-core" % sparkVersion % Provided,
   "org.apache.spark" %% "spark-core" % sparkVersion % Test classifier "tests",
+  "org.apache.spark" %% "spark-core" % sparkVersion % Test classifier "test-sources",
   "org.apache.spark" %% "spark-sql" % sparkVersion % Provided,
   "org.apache.spark" %% "spark-sql" % sparkVersion % Test classifier "tests",
+  "org.apache.spark" %% "spark-sql" % sparkVersion % Test classifier "test-sources",
   "org.apache.spark" %% "spark-catalyst" % sparkVersion % Test classifier "tests",
+  "org.apache.spark" %% "spark-catalyst" % sparkVersion % Test classifier "test-sources",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0",
   "org.scalatest" %% "scalatest" % "3.0.4" % "test",
   "org.typelevel" %% "cats-core" % "1.1.0",
@@ -25,3 +27,13 @@ scalacOptions += "-Ypartial-unification"
 
 // Avoids SI-3623
 target := file("/tmp/sbt/bitcoin-analyser")
+
+assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
+test in assembly := {}
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
+mainClass in assembly := Some("coinyser.BatchProducerAppSpark")
