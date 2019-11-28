@@ -1,0 +1,5 @@
+package coinyser
+
+object StreamingProducerApp {
+
+}
