@@ -55,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BatchProducerAppIntellij">
+  <component name="RunManager" selected="Scala Console.Scala Console">
     <configuration name="BatchProducerAppIntellij" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="coinyser.BatchProducerAppIntellij" />
       <module name="bitcoin-analyser" />
