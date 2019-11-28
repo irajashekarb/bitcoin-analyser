@@ -24,7 +24,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bitcoin-analyser" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -128,11 +133,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BatchProducerAppSpark" />
+      <item itemvalue="Application.BatchProducerAppIntellij" />
       <item itemvalue="Scala Console.Scala Console" />
       <item itemvalue="ScalaTest.BatchProducerSpec.BatchProducer.jsonToHttpTransaction should create a Dataset[HttpTransaction] from a Json string" />
       <item itemvalue="ScalaTest.BatchProducerIT" />
-      <item itemvalue="Application.BatchProducerAppSpark" />
-      <item itemvalue="Application.BatchProducerAppIntellij" />
     </list>
     <recent_temporary>
       <list>
@@ -174,9 +179,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3149729779524" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="351115446" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="3280644262" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3157785999" />
+        <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2734922665" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
     </option>
     <option name="projectSyncType">
