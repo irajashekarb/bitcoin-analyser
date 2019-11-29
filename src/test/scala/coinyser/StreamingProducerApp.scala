@@ -23,6 +23,7 @@ object StreamingProducerApp extends IOApp {
       val tx1 = deserializeWebsocketTransaction(wsTx)
       val tx = convertWsTransaction(tx1)
       val jsonTx = serializeTransaction(tx)
+      println(s"Pushing $jsonTx to kafka topic")
       kafkaProducer.send(new ProducerRecord(topic, tx.tid, jsonTx))
     }.flatMap(_ => IO.never)
   }
