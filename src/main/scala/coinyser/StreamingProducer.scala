@@ -46,6 +46,7 @@ object StreamingProducer extends StrictLogging {
       price = wsTx.price, sell = wsTx.`type` == 1, amount = wsTx.amount)
 
   def serializeTransaction(tx: Transaction): String =
+
     mapper.writeValueAsString(tx)
 
 }
