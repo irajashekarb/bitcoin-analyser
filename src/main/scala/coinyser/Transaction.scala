@@ -3,7 +3,6 @@ package coinyser
 import java.sql.{Date, Timestamp}
 import java.time.ZoneOffset
 
-// Case class for Dataset[Transaction]
 case class Transaction(timestamp: Timestamp,
                        date: Date,
                        tid: Int,
@@ -11,7 +10,7 @@ case class Transaction(timestamp: Timestamp,
                        sell: Boolean,
                        amount: Double)
 
-//In order to avoid having to pass the date, we can create a new apply method
+
 object Transaction {
   def apply(timestamp: Timestamp,
             tid: Int,

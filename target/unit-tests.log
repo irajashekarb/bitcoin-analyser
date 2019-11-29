@@ -1,0 +1,121 @@
+22:00:30.319 main INFO ProducerConfig: ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+22:00:31.950 main INFO ProducerConfig: ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [localhost:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+22:00:31.960 main INFO AppInfoParser: Kafka version : 0.10.0.1
+22:00:31.960 main INFO AppInfoParser: Kafka commitId : a7a17cdec9eaa6c5
+22:00:42.623 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":2.66163521,"amount_str":"2.66163521","buy_order_id":4393776487,"id":101170311,"microtimestamp":"1574958645198832","price":7542.64,"price_str":"7542.64","sell_order_id":4393776812,"timestamp":"1574958645","type":1}
+22:01:08.897 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":1.5,"amount_str":"1.50000000","buy_order_id":4393778180,"id":101170320,"microtimestamp":"1574958671516832","price":7549.27,"price_str":"7549.27","sell_order_id":4393776393,"timestamp":"1574958671","type":0}
+22:01:10.240 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.01393214,"amount_str":"0.01393214","buy_order_id":4393778202,"id":101170321,"microtimestamp":"1574958672816965","price":7549.93,"price_str":"7549.93","sell_order_id":4393778295,"timestamp":"1574958672","type":1}
+22:01:12.153 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.01033932,"amount_str":"0.01033932","buy_order_id":4393778202,"id":101170323,"microtimestamp":"1574958674778717","price":7549.93,"price_str":"7549.93","sell_order_id":4393778417,"timestamp":"1574958674","type":1}
+22:01:12.420 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.01323353,"amount_str":"0.01323353","buy_order_id":4393778202,"id":101170324,"microtimestamp":"1574958675025823","price":7549.93,"price_str":"7549.93","sell_order_id":4393778427,"timestamp":"1574958675","type":1}
+22:01:14.073 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.96249,"amount_str":"0.96249000","buy_order_id":4393778202,"id":101170325,"microtimestamp":"1574958676645153","price":7549.93,"price_str":"7549.93","sell_order_id":4393778527,"timestamp":"1574958676","type":1}
+22:01:14.340 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.00000501,"amount_str":"0.00000501","buy_order_id":4393778202,"id":101170326,"microtimestamp":"1574958676962178","price":7549.93,"price_str":"7549.93","sell_order_id":4393778558,"timestamp":"1574958676","type":1}
+22:01:22.703 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.02619783,"amount_str":"0.02619783","buy_order_id":4393779079,"id":101170331,"microtimestamp":"1574958685303525","price":7550.62,"price_str":"7550.62","sell_order_id":4393778724,"timestamp":"1574958685","type":0}
+22:01:28.353 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":1.4213,"amount_str":"1.42130000","buy_order_id":4393779461,"id":101170333,"microtimestamp":"1574958690918440","price":7550.62,"price_str":"7550.62","sell_order_id":4393778724,"timestamp":"1574958690","type":0}
+22:01:28.415 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.42861104,"amount_str":"0.42861104","buy_order_id":4393779382,"id":101170334,"microtimestamp":"1574958691029930","price":7547.33,"price_str":"7547.33","sell_order_id":4393779462,"timestamp":"1574958691","type":1}
+22:01:28.500 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":1.58138896,"amount_str":"1.58138896","buy_order_id":4393779454,"id":101170335,"microtimestamp":"1574958691117806","price":7545.93,"price_str":"7545.93","sell_order_id":4393779462,"timestamp":"1574958691","type":1}
+22:01:36.488 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":1,"amount_str":"1.00000000","buy_order_id":4393779463,"id":101170337,"microtimestamp":"1574958699105748","price":7549.31,"price_str":"7549.31","sell_order_id":4393779907,"timestamp":"1574958699","type":1}
+22:01:36.573 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.08317552,"amount_str":"0.08317552","buy_order_id":4393779909,"id":101170338,"microtimestamp":"1574958699187562","price":7548,"price_str":"7548.00","sell_order_id":4393779907,"timestamp":"1574958699","type":0}
+22:01:38.630 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":1,"amount_str":"1.00000000","buy_order_id":4393779962,"id":101170339,"microtimestamp":"1574958701189002","price":7551.29,"price_str":"7551.29","sell_order_id":4393779987,"timestamp":"1574958701","type":1}
+22:01:41.041 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.08317,"amount_str":"0.08317000","buy_order_id":4393779910,"id":101170340,"microtimestamp":"1574958703640082","price":7550.05,"price_str":"7550.05","sell_order_id":4393780185,"timestamp":"1574958703","type":1}
+22:01:47.293 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.00000552,"amount_str":"0.00000552","buy_order_id":4393779910,"id":101170342,"microtimestamp":"1574958709886231","price":7550.05,"price_str":"7550.05","sell_order_id":4393780720,"timestamp":"1574958709","type":1}
+22:01:53.655 pusher-java-client eventQueue INFO StreamingProducer$: Received event: trade with data: {"amount":0.80732834,"amount_str":"0.80732834","buy_order_id":4393780719,"id":101170343,"microtimestamp":"1574958716264234","price":7546.53,"price_str":"7546.53","sell_order_id":4393781081,"timestamp":"1574958716","type":1}
