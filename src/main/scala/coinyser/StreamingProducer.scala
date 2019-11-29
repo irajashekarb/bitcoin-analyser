@@ -1,5 +1,6 @@
 package coinyser
 
+import java.net.URI
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 import java.util.TimeZone
@@ -10,6 +11,7 @@ import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.pusher.client.Client
 import com.pusher.client.channel.SubscriptionEventListener
 import com.typesafe.scalalogging.StrictLogging
+import org.apache.spark.sql.{Dataset, SaveMode}
 
 object StreamingProducer extends StrictLogging {
 
@@ -46,8 +48,16 @@ object StreamingProducer extends StrictLogging {
       price = wsTx.price, sell = wsTx.`type` == 1, amount = wsTx.amount)
 
   def serializeTransaction(tx: Transaction): String =
-
     mapper.writeValueAsString(tx)
 
+  def unsafeSave(transactions: Dataset[Transaction], path: URI): Unit =
+    transactions
+      .write
+      .mode(SaveMode.Append)
+      .partitionBy("date")
+      .parquet(path.toString)
+
+  def save(transactions: Dataset[Transaction], path: URI): IO[Unit] =
+    IO(unsafeSave(transactions, path))
 }
 
