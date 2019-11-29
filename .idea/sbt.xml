@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/project" />
-            <option value="C:/tmp/sbt/bitcoin-analyser/scala-2.12" />
+            <option value="C:/tmp/sbt/bitcoin-analyser/scala-2.11" />
           </set>
         </option>
         <option name="resolveSbtClassifiers" value="true" />

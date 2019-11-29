@@ -1,7 +1,5 @@
 package coinyser
 
-/**Case class to deserialize the Json payload from
- * live streaming*/
 case class WebsocketTransaction(amount: Double,
                                 buy_order_id: Long,
                                 sell_order_id: Long,
@@ -9,5 +7,5 @@ case class WebsocketTransaction(amount: Double,
                                 price_str: String,
                                 timestamp: String,
                                 price: Double,
-                               `type`: Int,
+                                `type`: Int,
                                 id: Int)
